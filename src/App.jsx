@@ -695,7 +695,7 @@ export default function Portfolio() {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto mb-12">
         {[
           { label: "Projets ML/DL", value: "10+", icon: <Brain /> },
-          { label: "Précision Max", value: "96.5%", icon: <Target /> },
+          { label: "Précision modèle Max", value: "96.5%", icon: <Target /> },
           { label: "Technologies", value: "15+", icon: <Code /> },
           { label: "Certifications", value: "3", icon: <Award /> }
         ].map((stat, idx) => (
@@ -918,24 +918,15 @@ export default function Portfolio() {
                       <div className="flex-1">
                         <div className="flex justify-between mb-1">
                           <span className="text-white font-bold">{skill.category}</span>
-                          <span className="text-purple-400 font-semibold">{skill.level}%</span>
                         </div>
                       </div>
                     </div>
-                    <div className="w-full bg-slate-700 rounded-full h-3 mb-3 overflow-hidden">
-                      <div 
-                        className="bg-gradient-to-r from-purple-500 via-pink-500 to-purple-500 h-3 rounded-full transition-all duration-1000 ease-out relative overflow-hidden"
-                        style={{ width: `${skill.level}%` }}
-                      >
-                        <div className="absolute inset-0 bg-white/20 animate-pulse" />
-                      </div>
-                    </div>
+                     
                     <p className="text-gray-400 text-sm leading-relaxed">{skill.items.join(' • ')}</p>
                   </div>
                 ))}
               </div>
             </div>
-
             <div className="bg-slate-800/30 backdrop-blur-sm rounded-2xl p-8 border border-purple-500/20 hover:border-purple-500/40 transition-all">
               <h3 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
                 <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center">
@@ -1877,7 +1868,7 @@ export default function Portfolio() {
             <div>
               <h4 className="text-white font-semibold mb-4">Navigation Rapide</h4>
               <div className="space-y-2">
-                {['home', 'projects', 'about', 'experience', 'contact'].map(section => (
+                {['home', 'projets', 'about', 'experience', 'contact'].map(section => (
                   <button
                     key={section}
                     onClick={() => setActiveSection(section)}
