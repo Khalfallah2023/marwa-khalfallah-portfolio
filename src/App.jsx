@@ -378,6 +378,17 @@ export default function Portfolio() {
   };
 
  const projects = [
+   {
+      title: "Prévision CA avec Machine Learning - Timsoft",
+      badge: "💼 Business Intelligence",
+      description: "Système de prévision de chiffre d'affaires avec benchmark complet de 5 algorithmes ML sur 4 ans de données historiques. Pipeline ML de bout en bout avec monitoring des performances.",
+      tech: ["Python", "Pandas", "Scikit-learn", "Gradient Boosting", "ARIMA", "Random Forest", "Ridge Regression", "SQL", "Excel", "GitHub"],
+      highlights: ["+25% précision", "Pipeline production", "Feature engineering", "Analyses temporelles et géographiques", "Optimisation hyperparamètres"],
+      type: "Data Science",
+      impact: "+25% de précision business avec modèles prédictifs en production",
+      metrics: ["Validation croisée", "5 algorithmes", "4 ans données", "Monitoring continu"],
+      isTimsoft: true
+    },
     {
       title: "IA & IoT pour Maintenance Prédictive des Roulements",
       badge: "🏆 Projet Phare",
@@ -399,17 +410,6 @@ export default function Portfolio() {
       impact: "Génération automatique de l'état de santé des plantes avec collecte et analyse de données IoT en temps réel",
       metrics: ["Pipeline ML complet", "Feature engineering", "Preprocessing avancé"],
       isAgriTech: true
-    },
-    {
-      title: "Prévision CA avec Machine Learning - Timsoft",
-      badge: "💼 Business Intelligence",
-      description: "Système de prévision de chiffre d'affaires avec benchmark complet de 5 algorithmes ML sur 4 ans de données historiques. Pipeline ML de bout en bout avec monitoring des performances.",
-      tech: ["Python", "Pandas", "Scikit-learn", "Gradient Boosting", "ARIMA", "Random Forest", "Ridge Regression", "SQL", "Excel", "GitHub"],
-      highlights: ["+25% précision", "Pipeline production", "Feature engineering", "Analyses temporelles et géographiques", "Optimisation hyperparamètres"],
-      type: "Data Science",
-      impact: "+25% de précision business avec modèles prédictifs en production",
-      metrics: ["Validation croisée", "5 algorithmes", "4 ans données", "Monitoring continu"],
-      isTimsoft: true
     },
     {
       title: "VoiceGAN - Conversion Vocale par Deep Learning",
