@@ -694,17 +694,22 @@ export default function Portfolio() {
 
       {/* Statistiques */}
       
-      <div className="flex justify-center">
+   <div className="flex justify-center">
   <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-3xl mx-auto mb-12">
-    {[{ label: "Technologies", value: "15+", icon: <Code /> },
-      { label: "Projets ML/DL", value: "10+", icon: <Brain /> },
-      { label: "Certifications", value: "3", icon: <Award /> }
+    {[
+      { label: "Technologies", value: "15+", icon: <Code />, section: "about" },
+      { label: "Projets ML/DL", value: "10+", icon: <Brain />, section: "projects" },
+      { label: "Certifications", value: "3", icon: <Award />, section: "about" }
     ].map((stat, idx) => (
-      <div key={idx} className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-8 border border-purple-500/20 hover:border-purple-500/50 transition-all hover:scale-105">
-        <div className="text-purple-400 mb-2 flex justify-center">{stat.icon}</div>
+      <button 
+        key={idx} 
+        onClick={() => setActiveSection(stat.section)}
+        className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-8 border border-purple-500/20 hover:border-purple-500/50 transition-all hover:scale-105 cursor-pointer group"
+      >
+        <div className="text-purple-400 mb-2 flex justify-center group-hover:text-pink-400 transition-colors">{stat.icon}</div>
         <div className="text-3xl font-bold text-white mb-1">{stat.value}</div>
-        <div className="text-sm text-gray-400">{stat.label}</div>
-      </div>
+        <div className="text-sm text-gray-400 group-hover:text-purple-300 transition-colors">{stat.label}</div>
+      </button>
     ))}
   </div>
 </div>
