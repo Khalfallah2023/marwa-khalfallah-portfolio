@@ -716,18 +716,21 @@ export default function Portfolio() {
 
 
       {/* Boutons */}
-      <div className="flex flex-wrap gap-4 justify-center mb-12">
-        <a href="mailto:marwa.khalfallah2001@gmail.com" className="group px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white rounded-xl font-semibold transition-all flex items-center gap-3 shadow-lg shadow-purple-500/50 hover:shadow-xl hover:shadow-purple-500/70 hover:scale-105">
-          <Mail size={20} />
-          Me contacter
-          <ExternalLink size={16} className="group-hover:translate-x-1 transition-transform" />
-        </a>
-        <a href="#" className="group px-8 py-4 bg-slate-800 hover:bg-slate-700 text-white rounded-xl font-semibold transition-all flex items-center gap-3 border border-purple-500/20 hover:border-purple-500/50 hover:scale-105">
-          <Download size={20} />
-          Télécharger CV
-          <ChevronDown size={16} className="group-hover:translate-y-1 transition-transform" />
-        </a>
-      </div>
+<div className="flex flex-wrap gap-4 justify-center mb-12">
+  <button 
+    onClick={() => setActiveSection('contact')}
+    className="group px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white rounded-xl font-semibold transition-all flex items-center gap-3 shadow-lg shadow-purple-500/50 hover:shadow-xl hover:shadow-purple-500/70 hover:scale-105"
+  >
+    <Mail size={20} />
+    Me contacter
+    <ExternalLink size={16} className="group-hover:translate-x-1 transition-transform" />
+  </button>
+  <a href="#" className="group px-8 py-4 bg-slate-800 hover:bg-slate-700 text-white rounded-xl font-semibold transition-all flex items-center gap-3 border border-purple-500/20 hover:border-purple-500/50 hover:scale-105">
+    <Download size={20} />
+    Télécharger CV
+    <ChevronDown size={16} className="group-hover:translate-y-1 transition-transform" />
+  </a>
+</div>
 
       {/* Liens sociaux */}
       <div className="flex flex-wrap gap-6  justify-center  text-gray-300">
@@ -896,7 +899,7 @@ export default function Portfolio() {
                   <div className="absolute -left-2 top-0 w-4 h-4 bg-purple-500 rounded-full" />
                   <span className="text-purple-400 font-semibold text-sm">2025 - 2026</span>
                   <h4 className="text-2xl font-bold text-white mt-2 mb-2">Mastère de Recherche — Data Science</h4>
-                  <p className="text-gray-300 mb-2">Université de Tunis, Tunisie</p>
+                  <p className="text-gray-300 mb-2">École Nationale Supérieure d'Ingénieurs de Tunis (ENSIT)</p>
                   <p className="text-gray-400">Spécialisation : Machine Learning, Deep Learning, Optimisation & Analyse Prédictive</p>
                 </div>
                 <div className="relative pl-8 border-l-2 border-purple-500/30">
