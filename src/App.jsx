@@ -692,20 +692,22 @@ export default function Portfolio() {
       </p>
 
       {/* Statistiques */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto mb-12">
-        {[
-          { label: "Projets ML/DL", value: "10+", icon: <Brain /> },
-          { label: "Précision modèle Max", value: "96.5%", icon: <Target /> },
-          { label: "Technologies", value: "15+", icon: <Code /> },
-          { label: "Certifications", value: "3", icon: <Award /> }
-        ].map((stat, idx) => (
-          <div key={idx} className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-4 border border-purple-500/20 hover:border-purple-500/50 transition-all hover:scale-105">
-            <div className="text-purple-400 mb-2 flex justify-center">{stat.icon}</div>
-            <div className="text-3xl font-bold text-white mb-1">{stat.value}</div>
-            <div className="text-sm text-gray-400">{stat.label}</div>
-          </div>
-        ))}
+      
+      <div className="flex justify-center">
+  <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-3xl mx-auto mb-12">
+    {[{ label: "Technologies", value: "15+", icon: <Code /> },
+      { label: "Projets ML/DL", value: "10+", icon: <Brain /> },
+      { label: "Certifications", value: "3", icon: <Award /> }
+    ].map((stat, idx) => (
+      <div key={idx} className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-8 border border-purple-500/20 hover:border-purple-500/50 transition-all hover:scale-105">
+        <div className="text-purple-400 mb-2 flex justify-center">{stat.icon}</div>
+        <div className="text-3xl font-bold text-white mb-1">{stat.value}</div>
+        <div className="text-sm text-gray-400">{stat.label}</div>
       </div>
+    ))}
+  </div>
+</div>
+
 
       {/* Boutons */}
       <div className="flex flex-wrap gap-4 justify-center mb-12">
