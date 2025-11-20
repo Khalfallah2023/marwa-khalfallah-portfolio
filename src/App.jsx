@@ -581,7 +581,7 @@ export default function Portfolio() {
     <div className="hidden md:flex gap-2">
       {[
         { id: 'home', label: 'Home' },
-        { id: 'projects', label: 'Projets' },
+        { id: 'projects', label: 'Projects' },
         { id: 'about', label: 'About' },
         { id: 'experience', label: 'Experience' },
         { id: 'contact', label: 'Contact' }
