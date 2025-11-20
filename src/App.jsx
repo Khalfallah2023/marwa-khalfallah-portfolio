@@ -680,7 +680,7 @@ export default function Portfolio() {
       <div className="flex items-center justify-center gap-3 mb-6">
         <div className="h-px w-16 bg-gradient-to-r from-transparent to-purple-500" />
         <p className="text-2xl md:text-3xl text-purple-300 font-semibold">
-          Data Scientist 
+          Data Scientist & AI Engineering
         </p>
         <div className="h-px w-16 bg-gradient-to-l from-transparent to-pink-500" />
       </div>
