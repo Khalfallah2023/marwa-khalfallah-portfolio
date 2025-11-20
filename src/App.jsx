@@ -687,9 +687,10 @@ export default function Portfolio() {
 
       {/* Description */}
       <p className="text-lg text-gray-300 max-w-3xl mx-auto mb-8 leading-relaxed">
-        Ingénieure double diplôme <span className="text-purple-400 font-semibold">Mathématiques Appliquées</span> & <span className="text-pink-400 font-semibold">Data Science</span>. 
-        Experte en développement de solutions <span className="text-green-400 font-semibold">IA à fort impact business</span> : maintenance prédictive, optimisation, prévisions avancées.
-      </p>
+      Ingénieure en double diplôme <span className="text-purple-400 font-semibold">Mathématiques Appliquées</span> & <span className="text-pink-400 font-semibold">Data Science</span>, actuellement en <span className="text-yellow-400 font-semibold">PFE</span>.  
+      Passionnée par le développement de solutions <span className="text-green-400 font-semibold">IA à fort impact business</span>, avec des expériences sur la maintenance prédictive, l’optimisation et les prévisions avancées.
+    </p>
+
 
       {/* Statistiques */}
       
@@ -1870,7 +1871,7 @@ export default function Portfolio() {
             <div>
               <h4 className="text-white font-semibold mb-4">Navigation Rapide</h4>
               <div className="space-y-2">
-                {['home', 'projets', 'about', 'experience', 'contact'].map(section => (
+                {['Accueil', 'Projets', 'À propos', 'Expérience', 'Contact'].map(section => (
                   <button
                     key={section}
                     onClick={() => setActiveSection(section)}
