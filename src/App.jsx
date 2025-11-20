@@ -687,7 +687,7 @@ export default function Portfolio() {
 
       {/* Description */}
       <p className="text-lg text-gray-300 max-w-3xl mx-auto mb-8 leading-relaxed">
-      Ingénieure en double diplôme <span className="text-purple-400 font-semibold">Mathématiques Appliquées</span> & <span className="text-pink-400 font-semibold">Data Science</span>, actuellement en <span className="text-yellow-400 font-semibold">PFE</span>.  
+      Ingénieure en double diplôme <span className="text-purple-400 font-semibold">Mathématiques Appliquées</span> & <span className="text-pink-400 font-semibold">Data Science</span>, actuellement en <span className="text-yellow-400 font-semibold"> à la recherche d’un PFE</span>.  
       Passionnée par le développement de solutions <span className="text-green-400 font-semibold">IA à fort impact business</span>, avec des expériences sur la maintenance prédictive, l’optimisation et les prévisions avancées.
     </p>
 
