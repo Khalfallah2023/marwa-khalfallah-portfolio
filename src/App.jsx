@@ -620,7 +620,7 @@ export default function Portfolio() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col gap-2">
         {[
           { id: 'home', label: 'Home' },
-          { id: 'projects', label: 'Projets' },
+          { id: 'projects', label: 'Projects' },
           { id: 'about', label: 'About' },
           { id: 'experience', label: 'Experience' },
           { id: 'contact', label: 'Contact' }
