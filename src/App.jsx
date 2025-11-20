@@ -1871,7 +1871,7 @@ export default function Portfolio() {
             <div>
               <h4 className="text-white font-semibold mb-4">Navigation Rapide</h4>
               <div className="space-y-2">
-                {['Accueil', 'Projets', 'À propos', 'Expérience', 'Contact'].map(section => (
+                {['home', 'projects', 'about', 'experience', 'contact'].map(section => (
                   <button
                     key={section}
                     onClick={() => setActiveSection(section)}
